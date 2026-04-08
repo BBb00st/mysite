@@ -2,165 +2,56 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Мій Профіль — Максим</title>
-    <style>
-        /* Базові налаштування фону (як на скріні) */
-        body {
-            background-color: #e9e9e9; /* Сірий фон навколо */
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            padding: 50px;
-            margin: 0;
-        }
-
-        /* Білий контейнер сайту */
-        .container {
-            background-color: white;
-            width: 800px;
-            min-height: 500px;
-            border: 1px solid #ccc;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        /* Шапка з іменем */
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-            color: #333;
-        }
-
-        hr {
-            border: 0;
-            border-top: 1px solid #eee;
-            margin: 20px 0;
-        }
-
-        /* Дві колонки */
-        .content-wrapper {
-            display: flex;
-            gap: 40px;
-        }
-
-        /* Ліва колонка */
-        .main-info {
-            flex: 2;
-        }
-
-        .main-info h2 {
-            font-size: 28px;
-            margin-top: 0;
-        }
-
-        .profile-pic {
-            float: right;
-            margin-left: 20px;
-            border: 5px solid #fff;
-            box-shadow: 0 0 5px rgba(0,0,0,0.2);
-        }
-
-        /* Права колонка (Сайдбар) */
-        .sidebar {
-            flex: 1;
-            border-left: 1px solid #eee;
-            padding-left: 20px;
-        }
-
-        .search-box {
-            display: flex;
-            margin-bottom: 30px;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-
-        .search-box button {
-            background: #333;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-
-        .widget h3 {
-            font-size: 14px;
-            text-transform: uppercase;
-            color: #666;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-
-        .line {
-            height: 1px;
-            background: #eee;
-            margin: 15px 0;
-        }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Максим — Футбольний профіль</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
+    <div class="wrapper">
         <header>
-            <h1>Максим</h1>
+            <div class="header">
+                <div class="logo">
+                    <p>Максим-<b>Моісеєнко</b> <i>Офіційний сайт</i></p>
+                </div>
+                <div class="contacts">
+                    <p><a href="tel:+380975555501">+38 (097) 555-55-01</a><i>На зв'язку 24/7</i></p>
+                </div>
+            </div>
         </header>
 
-        <hr>
+        <main>
+            <div class="main-picture">
+                <img src="me.jpg.jfif" alt="Стадіон">
+            </div>
 
-        <div class="content-wrapper">
-            <main class="main-info">
-                <h2>About Me</h2>
-                
-                <img src="me.jpg.jfif" alt="Профіль" class="profile-pic"width= "150">
+            <div class="main">
+                <section class="main-text">
+                    <h1>Про мене</h1> 
+                    <p>Привіт! Мене звати <b>Максим</b>. Я полюбляю футбол та активно стежу за <b>ФК "Шахтар"</b>. Для мене це не просто гра, а справжня пристрасть! 🧡🖤</p>
+                    
+                    <p>Окрім футболу, я захоплююсь Genshin Impact та працюю над своєю формою. Зараз у мене період "сушки", тому дисципліна — понад усе.</p>
 
-                <p>
-                    Привіт! Мене звати <strong>Максим</strong>. Я полюбляю футбол та активно стежу за <strong>ФК "Шахтар"</strong>. 🧡🖤
-                </p>
-                
-                <p>
-                    Я використовую <strong>Telegram</strong> для того, щоб тримати зв'язок з рідними та друзями. 
-                </p>
+                    <p>Я використовую <b>Telegram</b> для того, щоб тримати зв'язок з рідними та друзями. Це мій основний центр комунікації.</p>
+                </section>
 
-                <p>
-                    Також я захоплююся Genshin Impact, займаюся фізичною формою і зараз вчуся створювати свої перші сайти на HTML.
-                </p>
-            </main>
+                <aside class="menu">
+                    <p><b>Футбольні партнери</b></p>
+                    <nav>
+                        <ul>
+                            <li><a href="#">ОСТАННІ НОВИНИ</a></li>
+                            <li><a href="#">ШАХТАР ІНФО</a></li>
+                            <li><a href="#">ПАРІ МАТЧ</a></li>
+                            <li><a href="#">ФАНАТИ СЕКТОРУ №48</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </main>
 
-            <aside class="sidebar">
-                <div class="search-box">
-                    <input type="text">
-                    <button>🔍</button>
-                </div>
-
-                <div class="widget">
-                    <h3>Recent Comments</h3>
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-
-                <div class="widget">
-                    <h3>Archives</h3>
-                    <div class="line"></div>
-                </div>
-
-                <div class="widget">
-                    <h3>Categories</h3>
-                    <div class="line"></div>
-                </div>
-
-                <div class="widget">
-                    <h3>Meta</h3>
-                    <div class="line"></div>
-                </div>
-            </aside>
-        </div>
+        <footer>
+            <p class="footer">© Максим — Футбольний менеджер 2026.</p>
+        </footer>
     </div>
-
 </body>
 </html>
